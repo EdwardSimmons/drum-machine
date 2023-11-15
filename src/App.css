@@ -2,21 +2,29 @@
   text-align: left;
   background-color: #282c34;
   max-height: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 16px;
-  padding: 2rem;
 }
 
 .display-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 50vw;
+  width: 15rem;
 }
 
 .drum-pad-container {
-  width: 33%;
+  width: 4rem;
+  aspect-ratio: 1 / 1;
   text-align: center;
+  padding: 0.5rem;
+}
+
+.drum-pad {
+  background-color: white;
+  border-radius: 1rem;
+  height: 100%;
 }
