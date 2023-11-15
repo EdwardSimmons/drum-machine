@@ -1,8 +1,8 @@
 {
-  "name": "react-boilerplate",
+  "name": "drum-machine",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://EdwardSimmons.github.io/",
+  "homepage": "https://EdwardSimmons.github.io/drum-machine",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
