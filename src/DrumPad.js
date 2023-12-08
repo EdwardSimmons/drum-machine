@@ -19,21 +19,22 @@ class DrumPad extends Component {
     }
 
     handleKeyDown(e) {
-        if (e.repeat || e.key.toLowerCase() !== this.props.id.toLowerCase()) return;
+        if (e.repeat || e.key.toLowerCase() !== this.props.pad.id.toLowerCase()) return;
 
         this.onClickPlay();
     }
 
     onClickPlay() {
-        new Audio(this.props.src).play();
+        new Audio(this.props.pad.src).play();
+        this.props.updateCurrentPad(this.props.pad)
     }
 
     render() {
         return (
             <div className="drum-pad-container">
-                <div id={this.props.name} className="drum-pad" onClick={this.onClickPlay.bind(this)}>
-                    {this.props.id}
-                    <audio id={this.props.id} src={this.props.src} className="clip" />
+                <div id={this.props.pad.name} className="drum-pad" onClick={this.onClickPlay.bind(this)}>
+                    {this.props.pad.id}
+                    <audio id={this.props.pad.id} src={this.props.pad.src} className="clip" />
                 </div>
             </div>
         );

@@ -9,11 +9,26 @@
   font-size: 16px;
 }
 
-.display-container {
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.pad-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 15rem;
+}
+
+.display-text {
+  background-color: white;
+  padding: 0.25rem 0.5rem;
+  width: 8rem;
+  max-height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .drum-pad-container {
