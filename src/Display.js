@@ -68,12 +68,15 @@ class Display extends Component {
     render() {
         return (
             <div className="container">
-                <div className="pad-container">
+                <div className="pads-container">
                     {this.state.drumPads.map((pad, index) => {
                         return <DrumPad pad={pad} key={index} updateCurrentPad={this.updateCurrentPad.bind(this)} />
                     })}
                 </div>
-                <div id="display" className="display-text">{this.state.currentPad?.name || ""}</div>
+                <div>
+                    <div className="title">Pad name:</div>
+                    <div id="display" className="display-text">{this.state.currentPad?.name || ""}</div>
+                </div>
             </div>
         );
     }

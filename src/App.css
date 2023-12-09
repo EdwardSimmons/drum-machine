@@ -12,23 +12,33 @@
 .container {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
-.pad-container {
+.pads-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 15rem;
 }
 
+.title {
+  width: 8rem;
+  margin-left: 2rem;
+  background-color: #000000;
+  color: white;
+  padding: 0.25rem 0.5rem;
+}
+
 .display-text {
   background-color: white;
   padding: 0.25rem 0.5rem;
   width: 8rem;
-  max-height: 2rem;
+  height: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 2rem;
 }
 
 .drum-pad-container {
@@ -42,4 +52,7 @@
   background-color: white;
   border-radius: 1rem;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
